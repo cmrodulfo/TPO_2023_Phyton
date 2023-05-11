@@ -2,60 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Gaia Holística</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gaia Holística</title>
 </head>
 
 <body>
-        <header class="header">    
-	<div class="contenedor">	
-            <img class="imag" src="img/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
-        <div class="container">
-          <a class="btn" href="index.html">Inicio</a>
-		  <a class="btn" href="hacer.html">¿Que hacemos?</a>
-		  <a class="btn" href="reservas.html">Reservas</a>
-          <a class="btn" href="contacto.html">Contacto</a>
-		</div>
-    </div>
-        </header>
-	</div>
-        <main class="contenido">
-            <h1>Reservas</h1>
-            <p class="texto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis rutrum gravida. Aliquam vel
-                nunc sit amet nibh aliquam sollicitudin eu vitae elit. Duis varius turpis est, at feugiat metus blandit
-                non. Mauris est nunc, ullamcorper nec egestas at, faucibus ac ex. Cras gravida ut odio eget vulputate.
-                Suspendisse ut nunc cursus, vulputate tortor id, mollis magna. Proin mattis euismod magna. Suspendisse
-                mattis, nunc vitae mattis iaculis, elit massa facilisis magna, ac consequat magna lacus sit amet lectus.
-                Suspendisse a lacinia est, a semper turpis. Phasellus lobortis eget nibh in scelerisque. Morbi feugiat
-                volutpat nisl, vehicula commodo augue volutpat at. Aenean aliquet tristique diam. Aenean maximus, quam
-                non sollicitudin efficitur, est sapien pharetra odio, eget aliquam justo urna eu eros. Donec nec
-                tincidunt tortor.
-                <br><br>
-
-                Maecenas pharetra pretium quam ut posuere. Quisque luctus sem purus. Phasellus vel nibh sed erat
-                interdum placerat eget a dui. Vivamus viverra pharetra congue. Sed pretium mi eu dui congue pulvinar.
-                Donec felis risus, malesuada quis tristique faucibus, vestibulum non urna. Fusce nec orci pulvinar,
-                blandit velit quis, finibus neque. Mauris malesuada metus eget ornare pellentesque. Nunc pharetra ante
-                eget ullamcorper finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Nulla maximus a dolor non condimentum. Suspendisse convallis ullamcorper justo.
-                <br><br>
-
-                Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper
-                nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor
-                tortor, sagittis ac mattis sed, ullamcorper et orci. Pellentesque quis mollis massa. Donec lacinia
-                turpis sapien, eu tincidunt dui rutrum elementum. Maecenas dictum et metus eget aliquam. Sed imperdiet
-                lacinia vulputate. Vivamus mauris arcu, faucibus pulvinar laoreet sed, scelerisque et dui.
-            </p>
-        </main>
-      <footer>
+  <header class="header">
+    <div class="contenedor">
+      <img class="imag" src="img/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
       <div class="container">
-        <p class="pie">&copy; All rights reserved.</p>
+        <a class="btn" href="index.html">Inicio</a>
+        <a class="btn" href="hacer.html">¿Que hacemos?</a>
+        <a class="btn" href="reservas.html">Reservas</a>
+        <a class="btn" href="contacto.html">Contacto</a>
       </div>
-      </footer>
+    </div>
+  </header>
+  </div>
+  <main class="content">
+
+    <h1>Reservas</h1>
+
+
+    <div class="booking">
+
+      <form action="#" class="formContent">
+
+        <div class="personalInput">
+
+          <div class="input">
+            <span class="details">Nombre</span>
+            <input type="text" class="input-Box" placeholder="Escriba su Nombre" id="nombre">
+          </div>
+
+          <div class="input">
+            <span class="details">Apellido</span>
+            <input type="text" class="input-Box" placeholder="Escriba su Apellido" id="apellido">
+          </div>
+
+          <div class="input">
+            <span class="details">DNI</span>
+            <input type="number" class="input-Box" placeholder="Escriba su DNI" id="dni">
+          </div>
+
+          <div class="input">
+            <span class="details">Fecha de Nacimiento</span>
+            <input type="date" class="input-Box" placeholder="dd/mm/aaaa" id="fechaNacimiento">
+          </div>
+        </div>
+
+        <div class="genderInput">
+
+          <div class="genderTitle">
+
+            <span class="">Género</span>
+
+          </div>
+
+          <div class="genderOption">
+
+            <input type="radio" name="genero" class="" placeholder="" id="genero1">
+            <Label class="genero" for="genero1">Hombre</Label>
+            <input type="radio" name="genero" class="" placeholder="" id="genero2">
+            <Label class="genero" for="genero2">Mujer</Label>
+            <input type="radio" name="genero" class="" placeholder="" id="genero3">
+            <Label class="genero" for="genero3">Prefiero no decir</Label>
+
+          </div>
+
+        </div>
+
+        <div class="contactInput">
+
+          <div class="input">
+            <span class="details">E-mail</span>
+            <input type="email" class="input-Box" placeholder="ejemplo@ejemplo.com" id="correo">
+          </div>
+          <div class="input">
+            <span class="details">Teléfono</span>
+            <input type="number" class="input-Box" placeholder="Numero de Teléfono" id="telefono">
+          </div>
+
+        </div>
+
+        <div class="bookingInput">
+
+          <div class="input">
+
+            <label for="services" class="details">Servicios</label>
+            <select name="services" class="input-Box" id="services">
+              <option value="">Selecciona una opción</option>
+              <option value="Masages">Masages</option>
+              <option value="Reiki">Reiki</option>
+              <option value="Terapia Floral">Terapia Floral</option>
+              <option value="Nutrición">Nutrición</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <span class="details">Fecha</span>
+            <input type="date" class="input-Box" placeholder="dd/mm/aaaa" id="fechaTurno">
+          </div>
+
+        </div>
+
+        <div class="buttonArea">
+          <button class="button">Continuar</button>
+        </div>
+      </form>
+    </div>
+
+
+  </main>
+  <footer>
+    <div class="container">
+      <p class="pie">&copy; All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 
 </html>

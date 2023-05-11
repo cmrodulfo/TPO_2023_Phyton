@@ -123,6 +123,165 @@ blockquote cite:before {
 }
    FIN SECTION QUOTE*/
 
+/*Estilos Pagina Reservas*/
+
+
+.booking {
+  display: flex;
+
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking .formContent {
+
+  max-width: 700px;
+  width: 100%;
+
+  background-color: rgb(194, 170, 216);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #7E6EA7;
+  font-size: 1.25rem;
+  align-items: center;
+
+}
+
+.booking .formContent .personalInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+
+
+.booking .formContent .input {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+  padding: 10px;
+}
+
+.booking .formContent .input span {
+  width: 200px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.booking .formContent .input .input-Box {
+  height: 35px;
+  width: 95%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.booking .formContent .genderInput {
+  padding: 10px;
+  align-items: center;  
+  
+}
+
+.booking .formContent .genderInput .genderTitle{
+  
+  
+  margin-bottom: 5px;
+}
+
+.booking .formContent .genderInput .genderOption{
+  padding-left: 15px;
+}
+
+.booking .formContent .genderInput .genderOption label{
+  margin-right: 15px;
+  font-size: 1.15rem;
+  
+}
+
+.booking .formContent .contactInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 12px 0;
+}
+
+.booking .formContent .bookingInput {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 12px 0;
+}
+
+.booking .formContent .bookingInput .input {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+  padding: 10px;
+}
+.booking .formContent .input .details {
+  width: 200px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.booking .formContent .bookingInput .input .input-Box {
+  height: 35px;
+  width: 95%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.booking .formContent .bookingInput .input option {
+  font-size: 1rem;
+}
+
+.booking .formContent .buttonArea {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin: 0 10px 20px 0;
+}
+
+.booking .formContent .buttonArea .button {
+  height: 35px;
+  width: 15%;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;  
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+/*FOOTER*/
+footer {
+  background: #8B77C1;
+  padding: 32px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.pie {
+  text-align: center;
+}
+
+/*Fin de Rservas/*
+
+
+
+
+
 /*FOOTER*/
 footer {
   background: #8B77C1;
