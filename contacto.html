@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gaia Holística</title>
+</head>
+
+<body>
+        <header class="header">	
+            <img class="imag" src="img/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
+        <div class="container">
+          <a class="btn" href="index.html">Inicio</a>
+		  <a class="btn" href="hacer.html">¿Que hacemos?</a>
+		  <a class="btn" href="reservas.html">Reservas</a>
+          <a class="btn" href="contacto.html">Contacto</a>
+		</div>
+        </header>
+<main>
+	<h1>Contactenos</h1>
+	<form name="contact" method="POST" data-netlify="true">
+		<p>
+			<label>Your Name: <input type="text" name="name" /></label>
+		</p>
+		<p>
+			<label>Your Email: <input type="email" name="email" /></label>
+		</p>
+		<p>
+			<label>Your Role: <select name="role[]" multiple>
+			<option value="leader">Leader</option>
+			<option value="follower">Follower</option>
+			</select></label>
+		</p>
+		<p>
+			<label>Message: <textarea name="message"></textarea></label>
+		</p>
+		<p>
+			<button type="submit">Send</button>
+		</p>
+	</form>
+</main>
+      <footer>
+      <div class="container">
+        <p>&copy; All rights reserved.</p>
+      </div>
+      </footer>
+</body>
+
+</html>
