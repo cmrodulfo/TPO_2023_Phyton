@@ -6,69 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+	
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau&display=swap" rel="stylesheet">
+
+    <!--Slider-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Gaia Holística</title>
 </head>
 
 <body>
         <header class="header">	
-            <img class="imag" src="img/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
-        <div class="container">
-          <a class="btn" href="index.html">Inicio</a>
-		  <a class="btn" href="hacer.html">¿Que hacemos?</a>
-		  <a class="btn" href="reservas.html">Reservas</a>
-          <a class="btn" href="contacto.html">Contacto</a>
-		</div>
+			<div class="contenedor">
+				<img class="imag" src="imagen/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
+			</div>    
+				<nav> 
+				<ul class="nav">
+					<li><a class="btn" href="index.html">Inicio</a></li>
+					<li><a class="btn" href="hacer.html">¿Que hacemos?</a>
+					
+						<!--menu desplegable-->
+					<ul>
+					<li><a class="btn" href="#parrafo1">¿Que es el Reiki?</a></li>
+					<li><a class="btn" href="#parrafo2">Parrafo 2</a></li>
+					<li><a class="btn" href="#parrafo3">Parrafo 3</a></li>
+					<li><a class="btn" href="#parrafo4">Parrafo 4</a></li>
+					<li><a class="btn" href="https://api.whatsapp.com/send/?</li>phone=5491149720228 ">Whatsapp </a></li>
+					<li><a class="btn" href="mailto:direccion@destinatario.com?&subject=Asunto</li>%20con%20espacios&body=mensaje">
+						Enviar mail</a>
+					</ul>
+					</li>
+					<!--fin <desplegable--></desplegable-->                
+					
+					<li><a class="btn" href="reservas.html">Reservas</a></li>
+					<li><a class="btn" href="contacto.html">Contacto</a></li>
+				</ul>
+				</nav>
         </header>
 <main>
-	<div class="contacto">
-		<h1>Contáctenos</h1> <br><br>
-		<form name="contact" method="POST" data-netlify="true">
-				<p>
-				<label> Sucursal: <select name="role[]" aria-multiselectable="true">
-				<option value="CABA">CABA</option>
-				<option value="Avellaneda">Avellaneda</option>
-				<option value="Lomas">Lomas de Zamora</option>
-				</select></label>				
-			</p><br>
-			<p>
-			 <input size="50px" placeholder="Nombre" type="text" name="name" /></label>
-			</p> <br>
-			<p>
-			<input size="50px" placeholder="Email" type="email" name="email" /></label>
-			</p> <br>
-			<p>
-			<input size="50px" placeholder="Teléfono" type="tel" name="Telefono" /></label>
-			</p> <br>
-		
-			<p>
-				<textarea name="Observaciones y comentarios" placeholder="Observaciones y comentarios" id="Observaciones y comentarios" cols="30" rows="10"></textarea>
-				
-			</p>
-			<br>
-			<p>
-				<button type="submit">Enviar</button>
-				<button type="reset">Borrar	
-				</button>
-			</p>
-			
-		</form>
-	</div>
-	<br><br>
-	<section>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1313967708684!2d-58.44332702341133!3d-34.60083875734775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0cc95ca1a3%3A0x397d618fc4c8ed58!2sAv.%20Ra%C3%BAl%20Scalabrini%20Ort%C3%ADz%20150%2C%20C1414DNO%20CABA!5e0!3m2!1ses!2sar!4v1683690471397!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2940632212326!2d-58.391020223408695!3d-34.67252706113689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccbb8eb4df17%3A0x5588e378bf4d2f43!2sAv.%20Galicia%20590%2C%20B1868BGS%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683690949352!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8101173093387!2d-58.40507942340535!3d-34.760375765789895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd293af823fc1%3A0x8c931d6bb5175376!2sAv.%20Hip%C3%B3lito%20Yrigoyen%208920%2C%20B1828CGO%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1683691273065!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		
-	</section>
-	<br>
-	<a href="index.html"> Regresar</a>
-	
+	<input type="checkbox" id="menu-check">
+	<label id="menu" for="menu-check">
+		<span id="menu-abrir">&#9776</span>
+		<span id="menu-cerrar">X</span>
+	</label>   
+	<h2>Formulario de registro</h2>
+
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+		<label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni"><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br>
+
+        <input type="submit" value="Enviar">
+		<input type="reset" value="Borrar">
+    </form>
 </main>
       <footer>
       <div class="container">
         <p>&copy; All rights reserved.</p>
       </div>
       </footer>
+
+	  <script src="main.js"></script>
 </body>
 
 </html>
