@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="css/style8.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <!--Fuentes-->
@@ -16,15 +16,14 @@
 
     <!--Slider-->
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-    
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Gaia Holística</title>
 </head>
 
 <body>
         <header class="header">	
             <div class="contenedor">
-                <img class="imag" src="imagen/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
+                <img class="imag" src="imagenes/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
             </div>
             <input type="checkbox" id="menu-check">
             <label id="menu" for="menu-check">
@@ -57,27 +56,44 @@
 	</div>
 <section class="quote">
             <h2 class="animate__animated animate__fadeInLeft">¿Que se puede hacer en Gaia Holística?</h2>
-        <!--Slider-->
-            <div id="slider">
-                <figure>
-                    <img src="img/1.jpg" alt="">
-                    <img src="img/2.jpg" alt="">
-                    <img src="img/3.jpg" alt="">
-                    <img src="img/4.jpg" alt="">
-                    <img src="img/1.jpg" alt="">
-                </figure>
-            </div>
-        <!--FIN Slider-->
+      
+<!--Slider-->
+<div class="slideshow-container">
+    <div class="mySlides fade">    
+        <!--<div class="numbertext">3 / 3</div>-->
+        <img src="img/carousel__slide1.jpg" style="width: 100%">
+        <div class="text">Reiki</div>
+    </div>
+    <div class="mySlides fade">    
+        <!--<div class="numbertext">3 / 3</div>-->
+        <img src="img/carousel__slide2.jpg" style="width: 100%">
+        <div class="text">Meditación</div>
+    </div>
+    <!--<div class="mySlides fade">    
+        <div class="numbertext">3 / 4</div>
+            <img src="img/carousel__slide3.jpg" style="width: 100%">
+            <div class="text">Caption Text</div>
+    </div>-->
+    <div class="mySlides fade">    
+        <!--<div class="numbertext">3 / 3</div>-->
+            <img src="img/carousel__slide4.jpg" style="width: 100%">
+            <div class="text">Masajes</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!--<br>
+<div style="text-align: center">
+    <span class="dot" onclick="currentSlides(1)"></span>
+    <span class="dot" onclick="currentSlides(2)"></span>
+    <span class="dot" onclick="currentSlides(3)"></span>
+</div>-->
+<!--FIN Slider-->
+
 			<h2 class="animate__animated animate__fadeInLeft">Reservas</h2>
-				<p class="texto">
-			    Maecenas pharetra pretium quam ut posuere. Quisque luctus sem purus. Phasellus vel nibh sed erat
-                interdum placerat eget a dui. Vivamus viverra pharetra congue. Sed pretium mi eu dui congue pulvinar.
-                Donec felis risus, malesuada quis tristique faucibus, vestibulum non urna. Fusce nec orci pulvinar,
-                blandit velit quis, finibus neque. Mauris malesuada metus eget ornare pellentesque. Nunc pharetra ante
-                eget ullamcorper finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Nulla maximus a dolor non condimentum. Suspendisse convallis ullamcorper justo.
-                </p>
-			<h2 class="animate__animated animate__fadeInLeft">Contactanos</h2>
+				
+
+            <h2 class="animate__animated animate__fadeInLeft">Contactanos</h2>
                 <p class="texto">
 				Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper
                 nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor
@@ -93,5 +109,5 @@
       </div>
       </footer>
 </body>
-
+    <script src="script.js"></script>
 </html>
