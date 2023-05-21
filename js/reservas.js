@@ -6,10 +6,12 @@ const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const service = document.getElementById("services");
 const appointmentDate = document.getElementById("appointmentDate");
+const facilities = document.getElementById("facilities");
 const button = document.querySelector("button");
-
+const errorMessage = document.getElementById("errorMessage")
+const submitSucces = document.getElementById("submitSucces")
 //Expresiones Regulares
-
+ console.log(errorMessage);
 const alfabetRegExp = /[a-zA-Z]/
 const dniRegExp = /^\d{1,2}\.?\d{3}\.?\d{3}$/
 const emailRegExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
@@ -19,120 +21,57 @@ const phoneRegExp = /^\+?\(?\d{2,4}\)?[\d\s-]{3,}$/
 button.addEventListener("click", (e) => {
     event.preventDefault()
 
-    validationForm()
-    //console.log(validForm);
-    validationForm() ? console.log("bien") : console.log("error");
-//console.log(email.value)
+    const validation = validationForm()
+    //console.log(validation);
+
+    if (validation == false) {
+    errorMessage.style.display = "flex"
+    submitSucces.style.display = "noe"
+}
+    //console.log(email.value)
+    else {
+        errorMessage.style.display = "none"
+        submitSucces.style.display = "flex"
+    }
 
 }
 )
 
 const validationForm = () => {
-    const validatingFirstName = validationInput(firstName.value, alfabetRegExp)
-    const validatingLastName = validationInput(lastName.value, alfabetRegExp)
-    const validatingDni = validationInput(dni.value, dniRegExp)
-    const validatingBirthDate = validationInput(birthDate.value, dateRegExp)
-    const validatingPhone = validationInput(phone.value, phoneRegExp)
-    const validatingEmail = validationInput(email.value, emailRegExp)
-    const validatingService = validationInput(service.value, alfabetRegExp)
-    const validatingAppointDate = validationInput(appointmentDate.value, dateRegExp)
-
+    const validFirstName = validationInput(firstName, alfabetRegExp)
+    const validLastName = validationInput(lastName, alfabetRegExp)
+    const validDni = validationInput(dni, dniRegExp)
+    const validBirthDate = validationInput(birthDate, dateRegExp)
+    const validPhone = validationInput(phone, phoneRegExp)
+    const validEmail = validationInput(email, emailRegExp)
+    const validService = validationInput(service, alfabetRegExp)
+    const validAppointDate = validationInput(appointmentDate, dateRegExp)
+    const validFacilities = validationInput(facilities, alfabetRegExp)
     const gender = document.querySelector('input[name="gender"]:checked');
-    const validatingGender = validationInput(gender.value, alfabetRegExp)
-    //console.log(validatingEmail);
+    const validGender = validationInput(gender, alfabetRegExp)
 
-    if (validatingFirstName == false) {
-        var validFirstName = false
-        firstName.style.borderColor = "#FF0000"
-    } else {
-        var validFirstName = true
-        firstName.style.borderColor = "#ccc"
-    }
 
-    if (validatingLastName == false) {
-        var validLastName = false
-        lastName.style.borderColor = "#FF0000"
-    } else {
-        var validLastName = true
-        lastName.style.borderColor = "#ccc"
-    }
-
-    if (validatingDni == false) {
-        var validDni = false
-        dni.style.borderColor = "#FF0000"
-    } else {
-        var validDni = true
-        dni.style.borderColor = "#ccc"
-    }
-
-    if (validatingBirthDate == false) {
-        var validBirthDate = false
-        birthDate.style.borderColor = "#FF0000"
-    } else {
-        var validBirthDate = true
-        birthDate.style.borderColor = "#ccc"
-    }
-
-    if (validatingGender == false) {
-        var validGender = false
-        gender.style.borderColor = "#FF0000"
-    } else {
-        var validGender = true
-        gender.style.borderColor = "#ccc"
-    }
-
-    if (validatingPhone == false) {
-        var validPhone = false
-        phone.style.borderColor = "#FF0000"
-    } else {
-        var validPhone = true
-        phone.style.borderColor = "#ccc"
-    }
-
-    if (validatingEmail == false) {
-        var validEmail = false
-        email.style.borderColor = "#FF0000"
-    } else {
-        var validEmail = true
-        email.style.borderColor = "#ccc"
-    }
-
-    if (validatingService == false) {
-        var validService = false
-        service.style.borderColor = "#FF0000"
-    } else {
-        var validService = true
-        service.style.borderColor = "#ccc"
-    }
-
-    if (validatingAppointDate == false) {
-        var validAppointDate = false
-        appointmentDate.style.borderColor = "#FF0000"
-    } else {
-        var validAppointDate = true
-        appointmentDate.style.borderColor = "#ccc"
-    }
-
-    if (validFirstName && validLastName && validDni && validGender && validEmail && validPhone && validService && validAppointDate) {
+    if (validFirstName && validLastName && validDni && validBirthDate && validGender && validEmail && validPhone && validService && validAppointDate && validFacilities) {
         return true
     } else return false
 }
 
 const validationInput = (data, regExp) => {
-console.log(data);
+    //console.log(data);
 
-    if (data == "") {
+    if (data.value == "") {
+        data.style.borderColor = "#FF0000"
         return false
     }
-    else if (regExp.test(data)) {
-            console.log("validación ok");
-            return true
-        }
-        else {
-            console.log("validación no ok");
-            return false
-        }
+    else if (!regExp.test(data.value)) {
+        data.style.borderColor = "#FF0000"
+        return false
+    }
+    else {
+        data.style.borderColor = "#ccc"
+        return true
+    }
 
-    
+
 
 }
