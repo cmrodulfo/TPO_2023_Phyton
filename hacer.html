@@ -41,20 +41,22 @@
         </nav>
     </header>
     <main class="contenido">
-        <div class="contenedor">
-            <nav>
-                <ul class="nav">
-                    <li><a class="btn1" href="#parrafo1">¿Que es el Reiki?</a></li>
-                    <li><a class="btn1" href="#parrafo2">El instituto</a></li>
-                    <li><a class="btn1" href="#parrafo3">Videoteca</a></li>
-                    <li><a class="btn1" href="#parrafo4">Ubicacion</a></li>
-                    <li><a class="btn1" href="https://api.whatsapp.com/send/?phone=5491149720228 "
-                            target="_blank">Whatsapp </a></li>
-                    <li><a class="btn1"
-                            href="mailto:direccion@destinatario.com?&subject=Asunto%20con%20espacios&body=mensaje quiero una sesion">
-                            Enviar mail</a>
-                </ul>
-            </nav>
+            
+            <div class="container2">
+                <nav>
+                    <ul class="nav">
+                        <li><a class="btn1" href="#parrafo1">¿Que es el Reiki?</a></li>
+                        <li><a class="btn1" href="#parrafo2">El instituto</a></li>
+                        <li><a class="btn1" href="#parrafo3">Videoteca</a></li>
+                        <li><a class="btn1" href="#parrafo4">Ubicacion</a></li>
+                        <li><a class="btn1" href="https://api.whatsapp.com/send/?phone=5491149720228 "
+                                target="_blank">Whatsapp </a></li>
+                        <li><a class="btn1"
+                                href="mailto:direccion@destinatario.com?&subject=Asunto%20con%20espacios&body=mensaje quiero una sesion">
+                                Enviar mail</a>
+                    </ul>
+                </nav>
+            </div>
             <div id="parrafo1">
                 <h2>El Reiki</h2>
                 <p class="texto">
@@ -92,13 +94,13 @@
             </div>
             <div id="parrafo2">
                 <h2>El instituto</h2>
-            
-                
-                <img class="img1" src="img/pic_trulli.jpg" alt="Exterior instituto" >
-                <img class="img1" src="img/img_1.jpg" alt="interior instituto" >
-                <img class="img1" src="img/img_2.jpg" alt="Trulli" >
-                <img class="img1" src="img/img_3.jpg" alt="Trulli" >
-                
+                <div id="container">
+                    <div id="caja"><img id="im1" src="img/pic_trulli.jpg" alt="Exterior instituto"></div>
+                    <div id="caja"><img id="im1" src="img/img_1.jpg" alt="interior instituto"></div>
+                    <div id="caja"><img id="im1" src="img/img_2.jpg" alt="Trulli"></div>
+                    <div id="caja"> <img id="im1" src="img/img_3.jpg" alt="Trulli"></div>
+                </div>
+
                 <p class="texto">
 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum eaque corrupti maxime
@@ -157,21 +159,18 @@
             </div>
             <div id="parrafo3">
                 <h2>Videos</h2>
-                <video class="vid1" width="350" height="200" controls>
-                    <source src="video\mov_bbb.mp4" type="video/mp4">
-                    <source src="mov_bbb.ogg" type="video/ogg">
-                    Your browser does not support HTML video.
-                </video>
-                <video class="vid1" width="350" controls>
-                    <source src="video\video_preview_h264.mp4" type="video/mp4">
+                <div id="container1">
 
-                </video>
-                <video class="vid1" width="350" controls>
-                    <source src="video\video_preview_h2641.mp4" type="video/mp4">
-                    <source src="mov_bbb.ogg" type="video/ogg">
-                    Your browser does not support HTML video.
-                </video>
-
+                    <video id="vid1" controls>
+                        <source src="video\mov_bbb.mp4" type="video/mp4">
+                    </video>
+                    <video id="vid1" controls>
+                        <source src="video\video_preview_h264.mp4" type="video/mp4">
+                    </video>
+                    <video id="vid1" controls>
+                        <source src="video\video_preview_h2641.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum maxime necessitatibus
                     illum
                     labore
@@ -208,9 +207,9 @@
                             src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed"
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                             href="https://online.stopwatch-timer.net/"></a><br>
-                       
+
                         </style><a href="https://www.embedmaps.co">embed google maps api</a>
-                       
+
                         </style>
                     </div>
                 </div>
