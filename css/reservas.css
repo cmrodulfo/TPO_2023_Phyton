@@ -137,8 +137,6 @@ ol {
   margin: 20px 0 12px 0;
 }
 
-
-
 .booking .formContent .input {
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
@@ -230,17 +228,20 @@ ol {
   justify-content: end;
   align-items: end;
   margin: 0 10px 20px 0;
-}
+  padding: 10px;
+  }
 
 .booking .formContent .buttonArea .button {
   height: 35px;
-  width: 15%;
+  width: 100px;
   outline: none;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+  margin: 3px;
+  
 }
 
 .booking .formContent #errorMessage {
@@ -392,5 +393,70 @@ footer {
     display: block;
     margin: 5px 0;
   }
+
+  
+
+  .booking .formContent {
+    width: 90%;
+  }
+
+  .booking .formContent .personalInput {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 12px 10px;
+    ;
+  }
+
+  .booking .formContent .input {
+    margin-bottom: 15px;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .booking .formContent .genderInput {
+    margin-left: 10px;
+    padding: 10px;
+    align-items: center;
+    
+  }
+  .booking .formContent .contactInput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 10px;
+  }
+  .booking .formContent .bookingInput {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 12px 10px;
+  }
+  .booking .formContent .bookingInput .input {
+    margin-bottom: 15px;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .booking .formContent .buttonArea {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0 10px 20px 0;
+    padding: 10px;
+    }
+  
+    .booking .formContent .buttonArea .button {
+      height: 35px;
+      width: 100px;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+      margin: 3px;
+      
+    }
 }
 /*FIN RESPONSIVE*/

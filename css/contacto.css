@@ -350,15 +350,19 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+p,
 textarea {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-input[type="submit"] {
+button {
   padding: 10px;
   background-color: #7E6EA7;
   color: #ffffff;
@@ -367,7 +371,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-color: #615187;
 }
 
@@ -382,10 +386,6 @@ input[type="reset"] {
 
 input[type="reset"]:hover {
   background-color: #615187;
-}
-
-.contacto {
-  margin left: 50px;
 }
 
 /*transformación*/

@@ -107,6 +107,11 @@ ul, ol {
 .nav li:hover > ul {
   display: block;
 }
+
+.centrar {
+  align-content: center;
+}
+
 /*.submenu {
     left: 50%;
     transform: translate(-50%, 0);

@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/contacto.css">
+    
+	<!--CSS-->
+	<link rel="stylesheet" href="css/contacto.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +36,7 @@
 					<li><a class="btn" href="index.html">Inicio</a></li>
 					<li><a class="btn" href="hacer.html">¿Que hacemos?</a>
 					
-						<!--menu desplegable-->
+						<!--menu desplegable
 					<ul>
 					<li><a class="btn" href="#parrafo1">¿Que es el Reiki?</a></li>
 					<li><a class="btn" href="#parrafo2">Parrafo 2</a></li>
@@ -44,10 +47,11 @@
 						Enviar mail</a>
 					</ul>
 					</li>
-					<!--fin <desplegable--></desplegable-->                
+					fin desplegable-->               
 					
 					<li><a class="btn" href="reservas.html">Reservas</a></li>
 					<li><a class="btn" href="contacto.html">Contacto</a></li>
+					<li><a class="btn" href="Nosotros.html">Nosotros</a></li>
 				</ul>
 				</nav>
         </header>
@@ -57,40 +61,30 @@
 		<span id="menu-abrir">&#9776</span>
 		<span id="menu-cerrar">X</span>
 	</label>   
-	<h2>Contáctate con Nosotros</h2>
+	<h2 class="animate__animated animate__fadeInLeft">¿Que se puede hacer en Gaia Holística?</h2>
+	<br>
 	<form class="contacto" name="contact" method="POST" data-netlify="true">
-		<p>
-			<label> Sucursal: <select name="role[]" aria-multiselectable="true">
+			<p type="elige">Elige una sucursal: <select name="role[]" aria-multiselectable="true">
 					<option value="CABA">CABA</option>
 					<option value="Avellaneda">Avellaneda</option>
 					<option value="Lomas">Lomas</option>
-				</select></label>
-		</p><br>
-		<p>
+				</select></p>
 			<input size="50px" placeholder="Nombre" type="text" name="name" /></label>
-		</p> <br>
-		<p>
 			<input size="50px" placeholder="Email" type="email" name="email" /></label>
-		</p> <br>
-		<p>
 			<input size="50px" placeholder="Teléfono" type="tel" name="Telefono" /></label>
-		</p> <br>
-
-		<p>
-			<input size="50px" type="text" name="Observaciones o comentarios" id="Observaciones o comentarios"
-				placeholder="Observaciones o comentarios">
+			 <p type="elige">Elige la rama para consultar: <select name="servicios" id="servicios">
+				<option value="masajes">Masajes</option>
+				<option value="reiky">Reiki</option>
+				<option value="meditacion">Meditación</option>
+				<option value="nutricion">Nutrición</option>
+				<option value="terapia">Terapia floral</option>
+			</select></p>
+			<input type="text" name="Observaciones o comentarios" id="Observaciones o comentarios"
+				placeholder="Observaciones o comentarios" style="height:100px">
 			<!-- <label>Mensaje: <textarea name="Mensaje"></textarea></label> -->
-		</p>
-		<br>
-		<p>
-			<button type="submit">Enviar</button>
-			<button type="reset">Borrar
-			</button>
-		</p>
-
+			<button onclick="showAlert()">Enviar</button>
+			<input type="reset">
 	</form>
-	</div>
-	<br><br>
 	<section id="mapas">
 		<div>
 			<h4>Sucursal CABA</h4><br>
@@ -114,19 +108,14 @@
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</section>
-
-
-	<br>
-	<a href="index.html"> Regresar</a>
-
 </main>
       <footer>
       <div class="container">
-        <p>&copy; All rights reserved.</p>
+        <span>&copy; All rights reserved.</span>
       </div>
       </footer>
-
-	  <script src="main.js"></script>
+	  <script src="js/main.js"></script>
+	  <script src="js/script.js"></script>
 </body>
 
 </html>

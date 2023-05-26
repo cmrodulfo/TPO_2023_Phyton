@@ -44,3 +44,13 @@ function showSlides() {
     setTimeout(showSlides, 2000);
     // change image every 2 seconds
 }
+
+function showAlert() {
+    alert('Hola, esta es una alerta desde JavaScript!');
+}
+
+// Contacto
+
+function showAlert() {
+    alert('Le responderemos a la brevedad!');
+}
