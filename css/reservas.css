@@ -349,5 +349,26 @@ footer {
       margin: 3px;
       
     }
+
+    .booking .formContent #errorMessage {
+      display: none;
+      color: red;
+      opacity: 60%;
+      justify-content: center;
+      margin-bottom: 15px;
+      margin-left: 15px;
+      padding: 10px;
+    
+    }
+    
+    .booking .formContent #submitSucces {
+      display: none;
+      color: rgba(30, 89, 250, 0.7);
+      justify-content: center;
+      margin-bottom: 15px;
+      margin-left: 15px;
+      padding: 10px;
+    
+    }
 }
 /*FIN RESPONSIVE*/
