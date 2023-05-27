@@ -182,5 +182,47 @@ padding-top: 15px;
     display: block;
     margin: 5px 0;
   }
+
+  body .quote .profileContainer {
+    display: block;
+    max-width: 100%;
+    
+    margin-top: 15px;
+    
+
+}
+body .quote .profileContainer .profileImage {
+  display: flex;  
+  justify-content: center;
+    max-width: 100%;
+    margin: 0 20px 0 35px;
+   
+}
+
+body .quote .profileContainer .profileImage #image {
+    
+    border-radius: 50%;
+    border: 5px solid #8B77C1;
+    
+    
+}
+
+
+body .quote .profileContainer .profileDescription {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+}
+
+body .profileContainer .profileDescription .profileName {
+    font-size: 1.5rem;
+    text-align:center;
+    color: #8B77C1;
+    padding-left: 25px;
+}
+
+body .profileContainer .profileDescription .description {
+padding-top: 15px;
+}
 }
 /*FIN RESPONSIVE*/
