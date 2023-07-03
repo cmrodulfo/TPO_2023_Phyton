@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imagen/favicon.png">
+    <link rel="stylesheet" href="css/reservas.css">
+    <link rel="stylesheet" href="css/inventario.css">
+    <link rel="stylesheet" href="css/style8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau&display=swap" rel="stylesheet">
+
+    <!--Slider-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Gaia Holística</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <img class="imag" src="imagen/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
+        </div>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+        <nav class="barraNav">
+            <ul class="nav">
+                <li><a class="button" href="index.html">Inicio</a></li>
+                <li><a class="button" href="hacer.html">¿Que hacemos?</a>
+                <li><a class="button" href="reservas.html">Reservas</a></li>
+                <li><a class="button" href="contacto.html">Contacto</a></li>
+                <li><a class="button" href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <h2 class="animate__animated animate__fadeInLeft">Reseva una cita con nosotros</h2>
+
+        <div class="inventory">
+
+            <div class="inventroyContent">
+
+                <a class="btn btn-secondary btnCarga" href="producto_nuevo.html">Cargar Producto</a>
+
+                <div v-if="error">
+                    <p>Lo sentimos , ........</p>
+                </div>
+                <div v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando .....</p>
+                    </section>
+
+                    <section v-else>
+                        
+                        <div class="tableInventory">
+                            
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="" v-for="producto in productos">
+                                        <th scope="row">{{producto.id}}</th>
+                                        <td>{{producto.nombre}}</td>
+                                        <td>{{producto.precio}}</td>
+                                        <td>{{producto.stock}}</td>
+                                        <td><img width="60" :src="producto.imagen" :alt="producto.nombre"></td>
+                                        <td>
+                                            <a class="btn btn-sm btn-warning" href="">Editar</a>
+                                            <button type="button" class="btn btn-sm btn-danger">Eliminar</button>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <p class="pie">&copy; All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/inventario.js"></script>
+</body>
+
+</html>
