@@ -51,9 +51,9 @@
 
         <h2 class="animate__animated animate__fadeInLeft">Reseva una cita con nosotros</h2>
 
-        <div class="inventory">
+        <div  class="inventory">
 
-            <div class="inventroyContent">
+            <div id="app" class="inventroyContent">
 
                 <a class="btn btn-secondary btnCarga" href="producto_nuevo.html">Cargar Producto</a>
 
@@ -89,8 +89,8 @@
                                         <td>{{producto.stock}}</td>
                                         <td><img width="60" :src="producto.imagen" :alt="producto.nombre"></td>
                                         <td>
-                                            <a class="btn btn-sm btn-warning" href="">Editar</a>
-                                            <button type="button" class="btn btn-sm btn-danger">Eliminar</button>
+                                            <a class="btn btn-sm btn-warning" :href="'editar_producto.html?id='+ producto.id">Editar</a>
+                                            <button type="button" class="btn btn-sm btn-danger" v-on:click="eliminar(producto.id)">Eliminar</button>
                                         </td>
                                     </tr>
                                     
@@ -113,7 +113,7 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="js/inventario.js"></script>
+    <script src="./js/inventario.js"></script>
 </body>
 
 </html>
