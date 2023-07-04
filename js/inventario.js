@@ -5,7 +5,7 @@ createApp({
             productos: [],
             //url:'http://localhost:5000/productos',
             // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-            url: 'http://mcerda.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
+            url: 'https://gaiaholistica.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
             error: false,
             cargando: true,
             /*atributos para el guardar los valores del formulario */
@@ -23,6 +23,7 @@ createApp({
                 .then(data => {
                     this.productos = data;
                     this.cargando = false
+            
                 })
                 .catch(err => {
                     console.error(err);
