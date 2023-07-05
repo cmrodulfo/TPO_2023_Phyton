@@ -31,6 +31,19 @@
   justify-content: center;
   padding-bottom: 10px;
 }
+.booking .formEditingContent {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgb(194, 170, 216);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #7E6EA7;
+  font-size: 1.25rem;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 10px;
+}
 
 .booking .formContent .formAdding {
   margin-bottom: 10px;
