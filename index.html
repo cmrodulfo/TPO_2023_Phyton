@@ -9,8 +9,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style8.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,90 +20,96 @@
 </head>
 
 <body>
-        <header class="header">	
-            <div class="contenedor">
-                <img class="imag" src="imagen/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
+    <header class="header">
+        <div class="contenedor">
+            <img class="imag" src="imagen/Logo.png" alt="Gaia Holística" width="15%" height="15%" />
+        </div>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+        <nav>
+            <ul class="nav">
+                <li><a class="btn" href="index.html">Inicio</a></li>
+                <li><a class="btn" href="hacer.html">¿Que hacemos?</a>
+                <li><a class="btn" href="reservas.html">Reservas</a></li>
+                <li><a class="btn" href="contacto.html">Contacto</a></li>
+                <li><a class="btn" href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <section class="quote">
+        <h2 class="animate__animated animate__fadeInLeft">¿Que se puede hacer en Gaia Holística?</h2>
+
+        <!--Slider-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <!--<div class="numbertext">3 / 3</div>-->
+                <img src="img/carousel__slide1.jpg" style="width: 100%">
+                <div class="text">Reiki</div>
             </div>
-            <input type="checkbox" id="menu-check">
-            <label id="menu" for="menu-check">
-                <span id="menu-abrir">&#9776</span>
-                <span id="menu-cerrar">X</span>
-            </label>   
-                <nav> 
-                <ul class="nav">
-                    <li><a class="btn" href="index.html">Inicio</a></li>
-                    <li><a class="btn" href="hacer.html">¿Que hacemos?</a>
-                    <li><a class="btn" href="reservas.html">Reservas</a></li>
-                    <li><a class="btn" href="contacto.html">Contacto</a></li>
-                    <li><a class="btn" href="nosotros.html">Nosotros</a></li>
-                </ul>
-             </nav>
-        </header>
-	</div>
-<section class="quote">
-            <h2 class="animate__animated animate__fadeInLeft">¿Que se puede hacer en Gaia Holística?</h2>
-      
-<!--Slider-->
-<div class="slideshow-container">
-    <div class="mySlides fade">    
-        <!--<div class="numbertext">3 / 3</div>-->
-        <img src="img/carousel__slide1.jpg" style="width: 100%">
-        <div class="text">Reiki</div>
-    </div>
-    <div class="mySlides fade">    
-        <!--<div class="numbertext">3 / 3</div>-->
-        <img src="img/carousel__slide2.jpg" style="width: 100%">
-        <div class="text">Meditación</div>
-    </div>
-    <div class="mySlides fade">    
-        <!--<div class="numbertext">3 / 4</div>-->
-            <img src="img/carousel__slide5.jpg" style="width: 100%">
-            <div class="text">Nutrición</div>
-    </div>
-    <div class="mySlides fade">    
-        <!--<div class="numbertext">3 / 3</div>-->
-            <img src="img/carousel__slide4.jpg" style="width: 100%">
-            <div class="text">Masajes</div>
-    </div>
-    <div class="mySlides fade">    
-        <!--<div class="numbertext">3 / 3</div>-->
-            <img src="img/carousel__slide6.jpg" style="width: 100%">
-            <div class="text">Terapia floral</div>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<!--<br>
+            <div class="mySlides fade">
+                <!--<div class="numbertext">3 / 3</div>-->
+                <img src="img/carousel__slide2.jpg" style="width: 100%">
+                <div class="text">Meditación</div>
+            </div>
+            <div class="mySlides fade">
+                <!--<div class="numbertext">3 / 4</div>-->
+                <img src="img/carousel__slide5.jpg" style="width: 100%">
+                <div class="text">Nutrición</div>
+            </div>
+            <div class="mySlides fade">
+                <!--<div class="numbertext">3 / 3</div>-->
+                <img src="img/carousel__slide4.jpg" style="width: 100%">
+                <div class="text">Masajes</div>
+            </div>
+            <div class="mySlides fade">
+                <!--<div class="numbertext">3 / 3</div>-->
+                <img src="img/carousel__slide6.jpg" style="width: 100%">
+                <div class="text">Terapia floral</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!--<br>
 <div style="text-align: center">
     <span class="dot" onclick="currentSlides(1)"></span>
     <span class="dot" onclick="currentSlides(2)"></span>
     <span class="dot" onclick="currentSlides(3)"></span>
 </div>-->
-<!--FIN Slider-->
+        <!--FIN Slider-->
 
-			<h2 class="animate__animated animate__fadeInLeft">Reservas</h2>
-				<p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, dolore repellat expedita enim quibusdam voluptatibus, a eaque unde distinctio veniam voluptate! Consequuntur quis cumque laudantium! Et beatae facilis odio officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque quibusdam deserunt quos at officia beatae expedita odit a, tempora porro obcaecati qui. Id delectus provident cumque iste, magni quia!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate id sunt saepe enim doloremque, eligendi iusto eos aut voluptatibus explicabo adipisci voluptatum illo ab quo atque a ratione facilis nihil. </p>
-                
-                <video class="video" autoplay="true" loop="true" controls="true">
-                    <source src="video/Gaia.mp4" type="video/mp4">
-                </video>
+        <h2 class="animate__animated animate__fadeInLeft">Reservas</h2>
+        <p class="texto">Siempre pensando en ofrecer la mejor de las experiencias a nuestros pacientes, GAIA Holistica
+            ofrece un sitema de reservas de turnos ultraflexible que incluye a todas sus sedes permitiendo asi, que
+            nuestros pacientes puedan priorizar su turno ya sea por fecha, por la sede donde desean ser atendidos o bien
+            por el profesional por el que desean ser atendidos, esto permite a los pacientes llegar al momento de la
+            atencion con un nivel
+            de satisfaccion que favorece las condiciones de tratamiento, porque en GAIA Holistica todos los detalles son
+            importantes </p>
 
-                <h2 class="animate__animated animate__fadeInLeft">Contactanos</h2>
-                <p class="texto">
-				Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper
-                nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor
-                tortor, sagittis ac mattis sed, ullamcorper et orci. Pellentesque quis mollis massa. Donec lacinia
-                turpis sapien, eu tincidunt dui rutrum elementum. Maecenas dictum et metus eget aliquam. Sed imperdiet
-                lacinia vulputate. Vivamus mauris arcu, faucibus pulvinar laoreet sed, scelerisque et dui.
-                </p>
-    </div>
-        </section>
-      <footer>
-      <div class="container">
-        <p class="pie">&copy; All rights reserved.</p>
-      </div>
-      </footer>
+        <video class="video" autoplay="true" loop="true" controls="true">
+            <source src="video/Gaia.mp4" type="video/mp4">
+        </video>
+
+        <h2 class="animate__animated animate__fadeInLeft">Contactanos</h2>
+        <p class="texto">
+            En GAIA Holistica estamos para atender todas tus dudas y consultas, puedes comunicarte con nosotros por
+            medio del formulario de contacto, por este medio tu consulta sera derivada al profesional correspondiente,
+            quien se encargara de responder a la brevedad y en forma personalizada, tambien puedes contactarnos por whatsapp o por
+            correo electronico, en GAIA Holistica crear un vinculo de confianza y confidencialidad con nuestros
+            pacientes es por demas importante.
+        </p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="pie">&copy; All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+
 </html>
